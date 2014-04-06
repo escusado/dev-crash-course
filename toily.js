@@ -150,4 +150,17 @@ $(document).ready(function(){
         $('p').css('background-color', 'yellow');
     });
 
+    var myInputA = $('input.my-input-a'),
+        myInputB = $('input.my-input-b'),
+        myResult = $('p.result'),
+        myButton = $('button.go');
+
+    myButton.click(function(){
+        var firstArg = parseInt(myInputA.val()),
+            secondArg = parseInt(myInputB.val());
+
+        myResult.html(firstArg + secondArg);
+    });
+
+
 });
