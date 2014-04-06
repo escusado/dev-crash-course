@@ -139,3 +139,15 @@ var myArguments = function(a, b){
     return a+b;
 };
 
+var myChanger = function(node){
+    node.html('this is your new html content');
+};
+
+//Jquery trickery
+$(document).ready(function(){
+
+    $('h1').click(function(){
+        $('p').css('background-color', 'yellow');
+    });
+
+});
