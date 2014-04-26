@@ -1,1 +1,66 @@
 documento de css
+
+
+  body {
+  font  : 21px sans-serif;
+
+  padding : 2em;
+  margin  : 0;
+
+  background : #222;
+}
+
+form {
+  position: relative;
+
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+
+  background: #f1f1f1 url(#);
+}
+
+input[type=text] textarea, select, button {
+  border: 1px dotted #999;
+  border-radius: 2px;
+  width : 150px;
+  padding:10px;
+}
+input[type=submit]{
+  	padding:5px 15px; 
+  	background:#ccc; 
+  	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+#Name {
+  	padding: 5px 10px 5px;
+  	left : 398px;
+  	top  : 235px;
+}
+
+#LastName {
+  	padding: 5px 10px 5px;
+  	left : 390px;
+  	top  : 285px;
+}
+
+#Age {
+	padding: 5px 10px 5px;
+  	left : 20px;
+  	top  : 70px;
+}
+
+#Gender {
+	padding: 5px 10px 5px;
+	left : 20px;
+	top  : 70px;
+}
+#Submit {
+	width: 135px;
+	height: 60px;
+}
