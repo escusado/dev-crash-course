@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea</title>
+
+    <script src="jquery-2.1.0.js" ></script>
+
+    <style>
+
+        .fancy-input{
+            background-color: red;
+        }
+
+        .fancy-input.edad{
+            background-color: white;
+        }
+
+    </style>
+
+    <script>
+
+         $(document).ready(function(){
+
+            $('button').click(function(){
+
+                var form = $('form'),
+                    values = {};
+
+                form.find('input').each(function(i, el){
+                    var input = $(el),
+                        name = input.attr('class'),
+                        value = input.val();
+
+                    values[name] = value;
+                });
+
+                console.log('>', values);
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <form action="#">
+
+        <input type="text" class="nombre">
+        <input type="text" class="edad">
+        <input type="text" class="genero1">
+        <input type="text" class="genero2">
+        <input type="text" class="genero3">
+        <input type="text" class="genero4">
+        <input type="text" class="genero5">
+        <input type="text" class="genero6">
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+</html>
